@@ -7,12 +7,11 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/client/app.ts",
+    app: "./src/client/app.js",
     vendor: ["vue", "vuex", "vue-router", "vuex-router-sync"]
   },
   resolve: {
-    // extensions: ["*", ".ts", ".js", ".vue", ".json"],
-    extensions: [".ts", ".js", ".vue", ".json"],
+    extensions: ["*", ".js", ".vue", ".json"],
     alias: {
       vue: "vue/dist/vue.esm.js",
       style: path.resolve(__dirname, "../../src/client/style"),
@@ -21,14 +20,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        loader: "ts-loader",
-        exclude: /node_modules/,
-        options: {
-          appendTsSuffixTo: [/\.vue$/]
-        }
-      },
       {
         test: /\.vue$/,
         loader: "vue-loader",

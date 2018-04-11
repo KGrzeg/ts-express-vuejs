@@ -6,19 +6,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-import Component from "vue-class-component";
-
-@Component({})
-export default class App extends Vue {
-  msg: string;
-
-  constructor() {
-    super();
-    this.msg = "Hello world!";
-  }
-}
+<script>
+export default {
+  msg: "Hello World!"
+};
 </script>
 
 <style lang="scss">
