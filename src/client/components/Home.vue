@@ -11,7 +11,7 @@ export default {
   name: "Home",
   data() {
     return {
-      msg: "Boilerplate for Express + Vue.JS with Typescript"
+      msg: "Boilerplate for Express + Vue.JS with Javascript"
     };
   },
   methods: {

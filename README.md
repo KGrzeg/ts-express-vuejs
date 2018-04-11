@@ -1,4 +1,4 @@
-# Typescript + Express + Vuejs + Webpack 4
+# Typescript + Express + Vuejs (Javascript) + Webpack 4
 Boilerplate for Express + Vue.JS with Typescript and Webpack 4
 
 `npm run dev` to run client project with hot reloading.
