@@ -1,6 +1,8 @@
 <template>
   <div class="home-container">
-    {{msg}}
+    <p>{{msg}}</p>
+    <br />
+    <button @click="testFunction">testFunction()</button>
   </div>
 </template>
 
@@ -12,13 +14,24 @@ export default {
       msg: "Boilerplate for Express + Vue.JS with Typescript"
     };
   },
-  methods: {},
-  computed: {}
+  methods: {
+    testFunction() {
+      alert();
+    }
+  },
+  computed: {},
+  created() {
+    console.log("created hook");
+  },
+  mounted() {
+    console.log("mounted hook");
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .home-container {
-  color: $secondary;
+  color: $primary;
+  font-size: 16px;
 }
 </style>
