@@ -35,7 +35,7 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
-            options: { name: "[name].[ext]", context: "" }
+            options: { name: "assets/img/[name].[ext]", context: "" }
           }
         ]
       },
@@ -52,7 +52,7 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
-            options: { name: "[name].[ext]", context: "" }
+            options: { name: "assets/fonts/[name].[ext]", context: "" }
           }
         ]
       }
